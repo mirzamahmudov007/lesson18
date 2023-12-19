@@ -1,0 +1,237 @@
+.navbar {
+  padding: 44px 0;
+  .container {
+    width: 80%;
+    margin: auto;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__item {
+      gap: 20px;
+      display: flex;
+      align-items: center;
+      &__logo {
+        color: #295091;
+        font-family: Rubik;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      }
+      &__money {
+        // margin-left: 20px;
+        display: flex;
+        gap: 20px;
+        color: #7a7a7a;
+        font-family: Rubik;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+
+      &__button button {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        border-radius: 5px;
+        background: linear-gradient(90deg, #1e96c8 15.07%, #37aee2 85.96%);
+        border: none;
+        padding: 11px 12px 8px 10px;
+        color: #fff;
+        font-family: Rubik;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+      }
+      &__language {
+        border-radius: 5px;
+        padding: 11px 8px 7px;
+        background: #fff;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      &__search {
+        display: flex;
+        align-items: center;
+        border-radius: 5px;
+        padding: 8px 8px 7px 8px;
+        background: #fff;
+      }
+      &__menu{
+        display: none;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .navbar {
+    padding: 44px 0;
+    &__list {
+      &__item {
+        gap: 10px;
+        &__logo {
+          font-size: 23px;
+        }
+        &__money {
+          gap: 20px;
+          font-size: 13px;
+        }
+
+        &__button button {
+          gap: 8px;
+          padding: 11px 12px 8px 10px;
+          font-size: 12px;
+          img{
+            width: 15px;
+          }
+        }
+        &__language {
+          border-radius: 5px;
+          padding: 11px 8px 7px;
+          font-size: 12px;
+          gap: 10px;
+          img{
+            width: 15px;
+          }
+        }
+        &__search {
+          display: flex;
+          align-items: center;
+          padding: 10px 8px 7px 8px;
+          img{
+            width: 17px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 950px) {
+    .navbar {
+      padding: 44px 0;
+      &__list {
+        &__item {
+          gap: 10px;
+          &__logo {
+            font-size: 18px;
+          }
+          &__money {
+            gap: 7px;
+            font-size: 10px;
+          }
+  
+          &__button button {
+            gap: 4px;
+            padding: 8px 12px 8px 10px;
+            font-size: 12px;
+            display: flex;
+            align-items: center;
+            img{
+              width: 12px;
+            }
+          }
+          &__language {
+            border-radius: 5px;
+            padding: 8px 8px 8px 5px;
+            font-size: 11px;
+            gap: 5px;
+            display: flex;
+            align-items: center;
+            img{
+              width: 12px;
+            }
+          }
+          &__search {
+            display: flex;
+            align-items: center;
+            padding: 8px 8px 8px 8px;
+            img{
+              width: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  
+@media only screen and (max-width: 750px) {
+    .navbar {
+      padding: 44px 0;
+      &__list {
+        &__item {
+          gap: 10px;
+          &__logo {
+            font-size: 23px;
+          }
+          &__money {
+            gap: 7px;
+            font-size: 13px;
+          }
+  
+          &__button{
+            display: none;
+          }
+          &__language {
+           display: none;
+          }
+          &__search {
+           display: none;
+          }
+          &__menu{
+            display: flex;
+            align-items: center;
+          }
+        }
+      }
+    }
+  }
+  
+
+  @media only screen and (max-width: 650px) {
+    .navbar {
+      padding: 44px 0;
+      &__list {
+        &__item {
+          gap: 10px;
+          &__logo {
+            font-size: 23px;
+          }
+          &__money {
+            display: none;
+          }
+          &__menu{
+            display: block;
+          }
+        }
+      }
+    }
+  }
+  
+  @media only screen and (max-width: 400px) {
+    .navbar {
+      padding: 44px 0;
+      &__list {
+        &__item {
+          gap: 10px;
+          &__logo {
+            font-size: 15px;
+          }
+          &__menu{
+            img{
+                width: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+  

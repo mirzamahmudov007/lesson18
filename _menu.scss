@@ -1,0 +1,117 @@
+.menu {
+    padding-bottom:  50px;
+  .container {
+    width: 80%;
+    background-color: #fff;
+    margin: auto;
+  }
+
+  &__list {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 21px 24px;
+    align-items: center;
+    &__item {
+      list-style: none;
+      color: #515151;
+      font-family: Rubik;
+      font-size: 19px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      &__next{
+        display: none;
+      }
+    }
+  }
+  &__list__none{
+    display: none;
+  }
+}
+
+@media only screen and (max-width:1200px) {
+    .menu {
+        &__list {
+          padding: 21px 24px;
+          &__item {
+            font-size: 16px;
+          }
+        }
+      }
+          
+}
+
+@media only screen and (max-width:1050px) {
+    .menu {
+        &__list {
+          padding: 18px 20px;
+          &__item {
+            font-size: 14px;
+          }
+        }
+      }
+          
+}
+
+@media only screen and (max-width:900px) {
+    .menu {
+        &__list {
+          padding: 15px 10px;
+          &__item {
+            font-size: 12px;
+          }
+        }
+      }
+          
+}
+@media only screen and (max-width:750px) {
+    .menu {
+        &__list {
+            
+          padding: 5px 5px 5px 10px;
+          &__item {
+            font-size: 16px;
+            &__next{
+                display: block;
+            }
+          }
+          &__item_x{
+            display: none;
+          }
+          
+        &__none{
+            display: flex;
+        }
+        }
+      }
+          
+}
+
+@media only screen and (max-width:600px) {
+    .menu {
+        &__list {
+          padding: 5px 5px 5px 10px;
+          &__item {
+            font-size: 14px;
+            &:nth-child(4){
+                display: none;
+            }
+          }
+        }
+      }   
+}
+
+@media only screen and (max-width:400px) {
+    .menu {
+        &__list {
+            padding: 5px 5px 5px 10px;
+          &__item {
+            font-size: 14px;
+            &:nth-child(3){
+                display: none;
+            }
+          }
+        }
+      }   
+}

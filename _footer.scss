@@ -1,0 +1,187 @@
+.footer{
+    margin-top: 50px;
+    width: 100%;
+    height: 40vh;
+    padding: 40px 0px;
+    background: #295093;
+    .container{
+        width: 80%;
+        margin: auto;
+    }
+    &__nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &__title{
+            color: #FFF;
+font-family: Rubik;
+font-size: 13px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+width: 154px;
+height: 38px;
+flex-shrink: 0;
+border-radius: 5px;
+background: #133C82;
+display: flex;
+padding: 0 5px;
+align-items: center;
+        }
+        p{
+            color: #FFF;
+font-family: Rubik;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+        }
+        button{
+            color: #295093;
+font-family: Rubik;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+width: 100px;
+display: flex;
+align-items: center;
+border: none;
+height: 38px;
+flex-shrink: 0;
+justify-content: space-evenly;
+border-radius: 5px;
+background: #FFF;
+        }
+    }
+    &__list{
+        margin-top: 20px;
+        display: flex;
+    list-style: none;
+    gap: 60px;
+    flex-wrap: wrap;
+        &__item:nth-child(1){
+            // width: 30%;
+        }
+        p{
+            color: #FFF;
+font-family: Rubik;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 30px;
+        }
+        span{
+            color: #FFF;
+font-family: Rubik;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+
+        }
+    }
+}
+
+
+
+@media only  screen and (max-width:1050px) {
+    .footer{
+        .container{
+        }
+        &__nav{ 
+            p{
+    display: none;
+            }
+          
+        }
+    }        
+    }
+
+    @media only  screen and (max-width:450px) {
+        .footer{
+            .container{
+                width: 90%;
+            }
+            &__nav{ 
+                p{
+        display: none;
+                }
+              
+            }
+        }        
+        }
+        @media only  screen and (max-width:1200px) {
+            .footer{
+                height: 90vh;
+                .container{
+                    width: 90%;
+                }
+                &__nav{ 
+                    p{
+            display: none;
+                    }
+                  
+                }
+            }        
+            }
+            @media only  screen and (max-width:400px) {
+                .footer{
+                    height: 100vh;
+                    .container{
+                        width: 90%;
+                    }
+                    &__list{
+                        gap: 20px;
+                    }
+                }        
+                }
+                @media only  screen and (max-width:350px) {
+                    .footer{
+                        height: 100vh;
+                        .container{
+                            width: 90%;
+                        }
+                        &__nav{
+                            &__title{
+                                width: 130px;
+                                font-size: 11px;
+                            }
+                            button{
+                                font-size: 12px;
+                            }
+                        }
+                        &__list{
+                            gap: 20px;
+                            &__item{
+                                p ,span {
+                                    font-size: 12px;
+                                }
+                            }
+                        }
+                    }        
+                    }
+                    @media only  screen and (max-width:300px) {
+                        .footer{
+                            height: 130vh;
+                            .container{
+                                width: 90%;
+                            }
+                            &__nav{
+                                &__title{
+                                    width: 130px;
+                                    font-size: 11px;
+                                }
+                                button{
+                                    font-size: 12px;
+                                }
+                            }
+                            &__list{
+                                gap: 20px;
+                                &__item{
+                                    p ,span {
+                                        font-size: 12px;
+                                    }
+                                }
+                            }
+                        }        
+                        }
+                    
